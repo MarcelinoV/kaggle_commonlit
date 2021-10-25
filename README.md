@@ -29,11 +29,11 @@ Before any data processing. I checked to see the data **shape (# of rows and col
 
 Initially, the excerpts have an average character length of about 972 with a standard deviation of 117.24. This metric and the variance shows that the length of the excerpts in oour dataset vary greatly.
 
-![alt text](https://github.com/MarcelinoV/HAI-Infections/blob/master/images/pre_proc_excerpt_stats.jpg "Stats of excerpts Pre_Processing")
+![alt text](https://github.com/MarcelinoV/kaggle_commonlit/blob/master/images/pre_proc_excerpt_stats.jpg "Stats of excerpts Pre_Processing")
 
 A word frequency distribution of the excerpts before NLP processing is also shown to give a better sense of the construction of the excerpts in terms of common words:
 
-![alt text](https://github.com/MarcelinoV/HAI-Infections/blob/master/images/pre_proc_word_freq.jpg "Word Frequency Distribution of excerpts Pre_Processing")
+![alt text](https://github.com/MarcelinoV/kaggle_commonlit/blob/master/images/pre_proc_word_freq.jpg "Word Frequency Distribution of excerpts Pre_Processing")
 
 ## Data Cleaning
 
