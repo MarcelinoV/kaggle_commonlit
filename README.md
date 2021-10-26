@@ -1,4 +1,7 @@
 # Kaggle's CommonLit Readability Competition
+
+![alt text](https://github.com/MarcelinoV/kaggle_commonlit/blob/main/images/commonlit.JPG "CommonLit Readability Competition Banner")
+
 Linear Regression models to predict the readability score of a given text. The dataset is that from the CommonLit Readability Competition on Kaggle. This competition took place in July, and while I could not submit by the deadline, I still wish to share my work here and showcase my use of the data science methodology.
 
 The scoring criteria used for the competition was the room mean squared error, or RMSE.
