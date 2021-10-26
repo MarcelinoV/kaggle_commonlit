@@ -5,7 +5,7 @@ As someone interensted in NLP, this was a passion project where I got to use tex
 
 ## Code and Resources Used
 
-**Python Version**: 3.6
+**Python Version**: 3.8.10
 
 **Packages**: pandas, numpy, matplotlib, seaborn, nltk, string, re, scipy, sklearn, readability
 
@@ -79,8 +79,22 @@ I defined a stacking model with Bayesian Ridge Regression, Support Vector Machin
 
 ![alt text](https://github.com/MarcelinoV/kaggle_commonlit/blob/main/images/stacking.JPG "Summary of Stacking Model")
 
-With a cross validation of 5, the average scores of each set of predictions was calculated, with the average root mean squared error resulting in 0.704 and the average R2 (validation) resulting in 0.541, a slightly better result than our baseline Ridge Regression model.
+With a cross validation of 5, the average scores of each set of predictions was calculated, with the average root mean squared error resulting in 0.704 and the average R2 (validation) resulting in 0.541, a slightly better result than our baseline Ridge Regression model. Given that stacking ensemble models add to the model complexity, this stacking solution may not be worth the pursuit given the slight improvement in scoring.
 
 ![alt text](https://github.com/MarcelinoV/kaggle_commonlit/blob/main/images/stacking_scores.JPG "Average Scores of Stacking Model")
 
 ## Conclusion and Recommendations
+
+To further improve the model, there are plenty of ideas I could try. The following are three that I can try without procuring more data. **Fun Fact: I tried scaling and normalizing the data before model training to see if it affected the result. It did not :(**
+
+### Change Data Processing Steps
+
+Instead of processing the data to tokenized bodies of text with no stopwords nor punctuation, I could redo the process but maintain punctuation, since punctuation marks add context to a piece of text, and thus affects the readability. I could also see how leaving stopwords affects the end result, but I doubt it would add context.
+
+### Use Features Selection Methods
+
+Forward Selection, Backward Elimination, and Stepwise Selection are all methods of feature selection that would help in selecting variables that are not only significant predictors of the dependent variable, but also are not highly correlated with one another, as in less multicollinearity.
+
+### Try Artificial Neural Network Design
+
+Incorporating a deep learning model can potentially improve scores since deep learning models can apply nonlinear transformations to the data, thus creating a deeper understanding of what determines a text's readability score than traditional machine learning models. Deep learning models are data hungry, but the idea may still be worth exploring.
