@@ -69,6 +69,7 @@ From these features, I visualized a Spearman correlation heatmap to get a sense 
 For the sake of simplicity, I decided to use features that had a spearman correlation of at least |35| (absolute value) with the target variable, regardless of multicollinearity. Resulting in these final variables for model building:
 
 ![alt text](https://github.com/MarcelinoV/kaggle_commonlit/blob/main/images/feat_dict.JPG "Dictionary of features above |35| threshold")
+![alt text](https://github.com/MarcelinoV/kaggle_commonlit/blob/main/images/corr_dict_graph.JPG "Visual of feature dictionary correlations with target")
 
 The final feature I wished to use was the text itself, in the form of a TF-IDF, or Term Frequency-Inverse Document Frequecy, vector. Using sklearn's Tfidfvectorizer, I created a vectorizer object to fit and transform the processed excerpt data accordingly, and used scipy's horizontal stacking function generate my final training and testing datasets. 
 
